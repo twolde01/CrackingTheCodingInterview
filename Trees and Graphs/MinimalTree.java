@@ -1,4 +1,8 @@
 public class MinimalTree {
+	/*
+	 * Time Complexity: O(N). N is the length of the array.
+	 * Space Complexity: O(H). H is the height of the tree.
+	 */
 	public TreeNode minimalBST(int[] a) {
 		return minimalBST(a,0,a.length-1);
 	}

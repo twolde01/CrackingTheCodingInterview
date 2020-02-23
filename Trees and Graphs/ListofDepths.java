@@ -1,6 +1,9 @@
 import java.util.*;
 public class ListofDepths {
-	
+	/*
+	 * Time Complexity: O(N), where N is the number of nodes in the tree.
+	 * Space Complexity: O(N)
+	 */
 	public List<List<Integer>> listOfDepths(TreeNode root) {
 		List<List<Integer>> res = new ArrayList<>();
 		if(root == null)
@@ -19,7 +22,7 @@ public class ListofDepths {
 					q.add(n.right);
 				
 			}
-			
+			// add the current level to the result list
 			res.add(level);
 		}
 		
