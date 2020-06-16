@@ -68,16 +68,4 @@ public class Fibonacci {
 		}
 		return a+b;
 	}
-	
-	public static void main(String[] args) {
-		int[] a = {0,1,2,3,4,5,10,15,20,25,30,35};
-		for(int i : a) {
-			long start = System.currentTimeMillis();
-			System.out.print(i + ": " + fib4(i));
-			long end = System.currentTimeMillis();
-			long time = end - start;
-			System.out.println("\t\t" + time);
-		}
-	}
-
 }
